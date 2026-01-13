@@ -20,7 +20,7 @@ const page = () => {
               <Image
                 className="object-cover object-center rounded hover:transition duration-200 ease-in-out hover:scale-105"
                 alt="BraceFree Orthodontics Platform"
-                src="/girl3.jpg"
+                src="/meditrack.jpg"
                 width={720}
                 height={600}
               />

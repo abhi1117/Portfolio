@@ -20,7 +20,7 @@ const page = () => {
               <Image
                 className="object-cover object-center rounded hover:transition duration-200 ease-in-out hover:scale-105"
                 alt="CharakDT platform"
-                src="/organic2.jpg"
+                src="/organic.jpg"
                 width={720}
                 height={600}
               />

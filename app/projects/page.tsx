@@ -71,7 +71,7 @@ const page = () => {
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project1">
                   <Image
-                    src="/meditrack2.jpg"
+                    src="/meditrack.jpg"
                     width={400}
                     height={400}
                     alt="SmileAge India"
@@ -97,7 +97,7 @@ const page = () => {
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project2">
                   <Image
-                    src="/organic2.jpg"
+                    src="/organic.jpg"
                     width={400}
                     height={400}
                     alt="CharakDT"
@@ -122,14 +122,13 @@ const page = () => {
             <div className="p-4 md:w-1/3 mb-6">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project3">
-                <Image
-                  src="/about2.png"
-                  width={400}
-                  height={400}
-                  alt="BraceFree"
-                  className="object-cover h-full w-full hover:scale-105 transition"
-                />
-
+                  <Image
+                    src="/meditrack.jpg"
+                    width={400}
+                    height={400}
+                    alt="BraceFree"
+                    className="object-cover h-full w-full hover:scale-105 transition"
+                  />
                 </Link>
               </div>
               <h2 className="text-xl font-medium text-white mt-5">
