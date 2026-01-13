@@ -71,7 +71,7 @@ const page = () => {
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project1">
                   <Image
-                    src="/meditrack.jpg"
+                    src="/meditrack2.jpg"
                     width={400}
                     height={400}
                     alt="SmileAge India"
@@ -123,7 +123,7 @@ const page = () => {
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project3">
                   <Image
-                    src="/meditrack.jpg"
+                    src="/About2.png"
                     width={400}
                     height={400}
                     alt="BraceFree"
