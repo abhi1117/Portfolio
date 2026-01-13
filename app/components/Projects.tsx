@@ -33,7 +33,7 @@ const Projects = () => {
                     height={400}
                     alt="SmileAge India"
                     className="object-cover object-center h-full w-full hover:transition duration-200 ease-in-out hover:scale-105"
-                    src="/meditrack.jpg"
+                    src="/meditrack2.jpg"
                   />
                 </Link>
               </div>
@@ -75,7 +75,7 @@ const Projects = () => {
                     height={400}
                     alt="CharakDT Healthcare Platform"
                     className="object-cover object-center h-full w-full hover:transition duration-200 ease-in-out hover:scale-105"
-                    src="/organic.jpg"
+                    src="/organic2.jpg"
                   />
                 </Link>
               </div>
@@ -116,7 +116,7 @@ const Projects = () => {
                     height={400}
                     alt="BraceFree Orthodontics Platform"
                     className="object-cover object-center h-full w-full hover:transition duration-200 ease-in-out hover:scale-105"
-                    src="/meditrack.jpg"
+                    src="/meditrack2.jpg"
                   />
                 </Link>
               </div>
