@@ -18,9 +18,9 @@ const page = () => {
               rel="noopener noreferrer"
             >
               <Image
-                className="object-cover object-center rounded hover:transition duration-200 ease-in-out hover:scale-105"
+                  className="w-full h-full object-cover object-top rounded-xl"
                 alt="CharakDT platform"
-                src="/organic.jpg"
+                src="/charak.jpg"
                 width={720}
                 height={600}
               />

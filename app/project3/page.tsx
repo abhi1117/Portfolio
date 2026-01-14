@@ -17,13 +17,14 @@ const page = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                className="object-cover object-center rounded hover:transition duration-200 ease-in-out hover:scale-105"
-                alt="BraceFree Orthodontics Platform"
-                src="/About2.png"
-                width={720}
-                height={600}
-              />
+            <Image
+              src="/girl3.jpg"
+              alt="BraceFree Orthodontics Platform"
+              width={500}
+              height={600}
+              className="w-full h-full object-cover object-top rounded-xl"
+              priority
+            />
             </a>
           </div>
 

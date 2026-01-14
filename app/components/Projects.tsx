@@ -33,7 +33,7 @@ const Projects = () => {
                     height={400}
                     alt="SmileAge India"
                     className="object-cover object-center h-full w-full hover:transition duration-200 ease-in-out hover:scale-105"
-                    src="/meditrack.jpg"
+                    src="/smileage.jpg"
                   />
                 </Link>
               </div>
@@ -75,7 +75,7 @@ const Projects = () => {
                     height={400}
                     alt="CharakDT Healthcare Platform"
                     className="object-cover object-center h-full w-full hover:transition duration-200 ease-in-out hover:scale-105"
-                    src="/organic.jpg"
+                    src="/charak.jpg"
                   />
                 </Link>
               </div>
@@ -111,13 +111,16 @@ const Projects = () => {
             <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project3">
-                  <Image
-                    width={400}
-                    height={400}
-                    alt="BraceFree Orthodontics Platform"
-                    className="object-cover object-center h-full w-full hover:transition duration-200 ease-in-out hover:scale-105"
-                    src="/meditrack.jpg"
-                  />
+                <Image
+                  src="/girl3.jpg"
+                  alt="BraceFree Orthodontics Platform"
+                  width={400}
+                  height={500}
+                  className="w-full h-full object-cover object-top rounded-xl"
+                  priority
+                />
+
+
                 </Link>
               </div>
               <h2 className="text-xl font-medium title-font text-white mt-5">

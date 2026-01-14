@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +16,6 @@ import { IoLogoCss3 } from "react-icons/io";
 import { SiCanva } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import { BiLogoTypescript } from "react-icons/bi";
-import { TypeAnimation } from "react-type-animation";
 
 const icons = [
   { id: 1, icon: <TbBrandNextjs className="text-8xl text-gray-500 hover:text-white transition" /> },
@@ -31,138 +32,110 @@ const icons = [
   { id: 12, icon: <SiCanva className="text-8xl text-gray-500 hover:text-white transition" /> },
 ];
 
-const page = () => {
+export default function ProjectsPage() {
   return (
     <div>
-      {/* PROJECTS SECTION */}
-      <section
-        style={{ fontFamily: "Montserrat, sans-serif" }}
-        className="text-gray-400 bg-black body-font"
-      >
+      {/* ================= PROJECTS SECTION ================= */}
+      <section className="text-gray-400 bg-black body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col">
             <div className="h-1 bg-gray-800 rounded overflow-hidden">
               <div className="w-24 h-full bg-indigo-500" />
             </div>
 
-            <div className="flex flex-wrap flex-row py-6 lg:mb-12 max-sm:mb-12">
-              <div className="font-semibold max-sm:mb-5">
-                <h1 className="text-white text-4xl inline max-sm:text-3xl">
-                  Explore My
-                </h1>
-                <h1 className="text-orange-500 text-4xl inline ml-3 max-sm:text-3xl">
-                  Creations
-                </h1>
+            <div className="flex flex-wrap py-6 mb-12">
+              <div className="font-semibold">
+                <h1 className="text-white text-4xl inline">Explore My</h1>
+                <h1 className="text-orange-500 text-4xl inline ml-3">Creations</h1>
               </div>
 
-              <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 lg:relative lg:left-56 max-sm:text-justify">
-                A curated selection of real-world, production-ready applications
-                built using modern web technologies. These projects demonstrate
-                my expertise in healthcare platforms, scalable architecture, and
-                user-centric design.
+              <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 lg:ml-auto">
+                A curated selection of production-ready applications built with
+                modern web technologies and scalable architecture.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-
-            {/* Project 1 – SmileAge India */}
-            <div className="p-4 md:w-1/3 mb-6">
+          <div className="flex flex-wrap -m-4">
+            {/* Project 1 */}
+            <div className="p-4 md:w-1/3">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project1">
                   <Image
-                    src="/meditrack2.jpg"
+                    src="/smileage.jpg"
                     width={400}
                     height={400}
-                    alt="SmileAge India"
+                    alt="Project 1"
                     className="object-cover h-full w-full hover:scale-105 transition"
                   />
                 </Link>
               </div>
-              <h2 className="text-xl font-medium text-white mt-5">
-                SmileAge India
-              </h2>
+              <h2 className="text-xl font-medium text-white mt-5">Project One</h2>
               <p className="mt-2">
-                A modern dental and healthcare platform delivering a clean,
-                responsive UI and a professional digital presence. Built with
-                performance optimization and real-world deployment in mind.
+                Placeholder project showcasing UI, performance optimization,
+                and modern design principles.
               </p>
-              <a href="/project1" className="text-indigo-400 inline-flex items-center mt-3">
+              <Link href="/project1" className="text-indigo-400 inline-flex items-center mt-3">
                 Learn More →
-              </a>
+              </Link>
             </div>
 
-            {/* Project 2 – CharakDT */}
-            <div className="p-4 md:w-1/3 mb-6">
+            {/* Project 2 */}
+            <div className="p-4 md:w-1/3">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project2">
                   <Image
-                    src="/organic.jpg"
+                    src="/charak.jpg"
                     width={400}
                     height={400}
-                    alt="CharakDT"
+                    alt="Project 2"
                     className="object-cover h-full w-full hover:scale-105 transition"
                   />
                 </Link>
               </div>
-              <h2 className="text-xl font-medium text-white mt-5">
-                CharakDT
-              </h2>
+              <h2 className="text-xl font-medium text-white mt-5">Project Two</h2>
               <p className="mt-2">
-                A healthcare documentation platform enabling doctors to create
-                structured clinical records using speech-to-text workflows,
-                secure storage, and scalable architecture.
+                Demonstrates scalable backend integration and clean UX patterns.
               </p>
-              <a href="/project2" className="text-indigo-400 inline-flex items-center mt-3">
+              <Link href="/project2" className="text-indigo-400 inline-flex items-center mt-3">
                 Learn More →
-              </a>
+              </Link>
             </div>
 
-            {/* Project 3 – BraceFree */}
-            <div className="p-4 md:w-1/3 mb-6">
+            {/* Project 3 */}
+            <div className="p-4 md:w-1/3">
               <div className="rounded-lg h-64 overflow-hidden">
                 <Link href="/project3">
                   <Image
-                    src="/About2.png"
+                    src="/girl3.jpg"
                     width={400}
                     height={400}
-                    alt="BraceFree"
+                    alt="Project 3"
                     className="object-cover h-full w-full hover:scale-105 transition"
                   />
                 </Link>
               </div>
-              <h2 className="text-xl font-medium text-white mt-5">
-                BraceFree
-              </h2>
+              <h2 className="text-xl font-medium text-white mt-5">Project Three</h2>
               <p className="mt-2">
-                An orthodontics and clear aligner platform designed to educate
-                users, streamline treatment discovery, and deliver a seamless
-                healthcare-grade digital experience.
+                Focused on healthcare-grade UI, accessibility, and performance.
               </p>
-              <a href="/project3" className="text-indigo-400 inline-flex items-center mt-3">
+              <Link href="/project3" className="text-indigo-400 inline-flex items-center mt-3">
                 Learn More →
-              </a>
+              </Link>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* SKILLS SECTION */}
-      <section
-        style={{ fontFamily: "Montserrat, sans-serif" }}
-        className="bg-black body-font"
-      >
+      {/* ================= SKILLS SECTION ================= */}
+      <section className="bg-black body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <div className="mb-6 font-semibold">
-              <h1 className="text-white text-4xl inline">My</h1>
-              <h1 className="text-orange-500 text-4xl inline ml-2">Skills</h1>
-            </div>
+            <h1 className="text-white text-4xl inline">My</h1>
+            <h1 className="text-orange-500 text-4xl inline ml-2">Skills</h1>
 
-            <p className="xl:w-2/4 lg:w-3/4 mx-auto text-gray-300">
-              Technologies and tools I use to build scalable, performant, and
-              production-ready web applications.
+            <p className="xl:w-2/4 lg:w-3/4 mx-auto mt-6 text-gray-300">
+              Technologies and tools I use to build modern web applications.
             </p>
 
             <div className="flex mt-6 justify-center">
@@ -179,6 +152,4 @@ const page = () => {
       </section>
     </div>
   );
-};
-
-export default page;
+}
